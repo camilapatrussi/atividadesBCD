@@ -39,7 +39,7 @@ INSERT INTO cliente(nome_cliente, email, telefone, data_entrada)
 VALUES ("Jansen", "jansendasilva@gmail.com", 2222-3333,  "2026-09-03");
 
 
-SELECT * FROM cliente
+SELECT * FROM cliente;
 
 
 INSERT INTO produto(nome_produto, preco, qtd, data_entrada)
@@ -52,7 +52,7 @@ INSERT INTO produto(nome_produto, preco, qtd, data_entrada)
 VALUES ("Salgadinho", 8.99, 13, "2026-09-28");
 
 
-SELECT * FROM produto
+SELECT * FROM produto;
 
 
 INSERT INTO venda(id_cliente, id_produto, data_entrada, qtd_venda)
@@ -65,4 +65,4 @@ INSERT INTO venda(id_cliente, id_produto, data_entrada, qtd_venda)
 VALUES ( 3, 3, "2026-09-25", 6);
 
 
-SELECT * FROM venda
+SELECT * FROM venda;
