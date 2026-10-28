@@ -70,7 +70,7 @@ SELECT produto.nome_produto,
 FROM venda 
 INNER JOIN produto 
     ON venda.id_produto = produto.id_produto
-WHERE venda.forma_pagamento IN ('PIX', 'Boleto');
+WHERE venda.forma_pagamento IN ("PIX", "Boleto");
 
 --- 13.Consultar nome do cliente, nome do produto, data da venda e quantidade
 USE vendas_informatica;
@@ -121,5 +121,5 @@ INNER JOIN cliente
     ON venda.id_cliente = cliente.id_cliente
 INNER JOIN produto 
     ON venda.id_produto = produto.id_produto
-WHERE venda.status_venda IN ('Cancelada', 'Concluída')
+WHERE venda.status_venda IN ("Cancelada", "Concluída")
 ORDER BY (venda.quantidade * venda.preco_unitario_venda) DESC;
